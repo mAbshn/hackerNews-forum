@@ -1,0 +1,35 @@
+.menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    transition: 0.3s;
+    @media screen and (max-width: 1000px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 0px;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #fff;
+        color: #000;
+        transform: translateY(-100%);
+    }
+    .menu__login {
+        font-weight: bold;
+        font-size: 22px;
+        color: #FE6315;
+        transition: 0.2s;
+        &:hover {
+            letter-spacing: 2px;
+        }
+        @media screen and (max-width: 1000px) {
+            margin-bottom: 100px;
+            font-size: 30px;
+        }
+    }
+}
+._active {
+    transform: translateY(0);
+}

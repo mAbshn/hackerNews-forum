@@ -1,0 +1,21 @@
+.comment {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #404147;
+    cursor: pointer;
+    .comment__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        overflow: scroll;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    .comment__info {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

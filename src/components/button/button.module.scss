@@ -1,0 +1,17 @@
+.button {
+    display: block;
+    width: 290px;
+    height: 44px;
+    background-color: #FE6315;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.2s;
+    &:hover {
+        background-color: #fff;
+        color: #FE6315;
+    }
+    @media screen and (max-width: 1000px) {
+        width: 30vw;
+    }
+}

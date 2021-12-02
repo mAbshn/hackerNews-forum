@@ -1,0 +1,36 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .nav__item {
+        margin-right: 29px;
+        font-weight: 500;
+        font-size: 22px;
+        transition: 0.2s;
+        cursor: pointer;
+        &:last-child {
+            margin-right: 50px;
+        }
+        &:hover {
+            color: #FE6315;
+        }
+        @media screen and (max-width: 1060px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            margin-bottom: 30px;
+            font-size: 30px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+    ._active {
+        color: #FE6315;
+    }
+}

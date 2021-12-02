@@ -1,0 +1,14 @@
+.header {
+    background-color: #26272C;
+    border-bottom: 7px solid #FE6315;
+    border-top: 1px solid transparent;
+    .header__inner {
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media screen and (max-width: 1365px) {
+            margin: 20px 15px;
+        }
+    }
+}
