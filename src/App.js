@@ -1,6 +1,6 @@
 import { observer } from 'mobx-react-lite';
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import './App.scss';
 import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
@@ -22,6 +22,7 @@ const App = observer(() => {
           <Route exact path="/" component={Main} />
           {fetching.posts.map((post) => 
             <Route path={"/" + post.id} render={()=><PostContent post={post}/>} />)}
+          <Redirect to="/" />
         </Switch>
         <Footer />
       </Router>
